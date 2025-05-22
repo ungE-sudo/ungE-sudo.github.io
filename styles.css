@@ -1,0 +1,403 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-container {
+    border: 4px solid green;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-wrapper {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url('night_photo.JPG') center/cover no-repeat;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    position: relative;
+    background: white;
+    z-index: 1;
+    padding: 0 2rem;
+    margin-top: 0;
+}
+
+.heroTwo {
+    width: 100%;
+    height: 100vh;
+    background: url('IMG_9972.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero h2 {
+    color: black;
+    -webkit-text-stroke: 1px white;
+    font-size: 3.0rem;
+    font-weight: bold;
+}
+
+.heroTwo h2 {
+    color: black;
+    -webkit-text-stroke: 1px white;
+    font-size: 3.0rem;
+    font-weight: bold;
+}
+
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    flex: 1;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card-text {
+    color: #555;
+    font-size: 1em;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card-button:hover {
+    background: #0056b3;
+}
+
+.card-containerTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.cardTwo {
+    width: 1000px;
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cardTwo-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.cardTwo:hover .cardTwo-inner {
+    transform: rotateY(180deg);
+}
+
+.cardTwo-front,
+.cardTwo-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.cardTwo-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.economyCardLabel,
+.familyCardLabel,
+.natureCardLabel,
+.skiCardLabel,
+.sportCardLabel,
+.jobCardLabel {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1.2rem;
+}
+
+.cardTwo-back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.card-containerThree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.cardThree {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    flex: 1;
+}
+
+.memberTitle {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.cardThree img {
+    width: 100%;
+    height: auto;
+}
+
+.cardThree-content {
+    padding: 15px;
+}
+
+.cardThree-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.cardThree-text {
+    color: #555;
+    font-size: 1em;
+}
+
+.cardThree-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cardThree-button:hover {
+    background: #0056b3;
+}
+
+/* -------------------------------------------
+   Responsive Design for Mobile (max-width: 768px)
+--------------------------------------------- */
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .logo-container {
+    position: static;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .card-container,
+  .card-containerTwo,
+  .card-containerThree {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .cardTwo,
+  .cardThree {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .cardTwo {
+    height: 300px;
+  }
+
+  .hero h2,
+  .heroTwo h2 {
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero,
+  .heroTwo {
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
+  }
+}
