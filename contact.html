@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Select Greens - Contact</title>
+        <link rel="icon" type="image/x-icon" href="select_greens_logo.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <!-- 
+    "<head>" element is a container for metadata (data about data) and is placed between the <html> tag and 
+    the <body> tag.
+    
+    -->
+        <body>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <!-- <li><a href="#">Invest</a></li> -->
+                        <!-- <li><a href="#">Portfolio</a></li> -->
+                    </ul>
+                </nav>
+
+                <div class="logo-container">
+                    <img src="select_greens_logo.png" alt="Logo" class="logo">
+                </div>
+            </header>
+
+            <div class="hero-wrapper">
+            <section class="heroTwo">
+                <div class="hero-overlayTwo">
+                    <h2>Let's Get Started. Reach Out Today For Your Free Estimate.</h2>
+                </div>
+            </section>
+            </div>
+
+            <main class="content">
+            <section>
+                <!-- <h2>Contact Us</h2>
+                <p>We'd love to hear from you. Fill out the form below or reach us at:</p>
+                <p>Email: contact@mywebsite.com</p>
+                <p>Phone: 801-boi</p> -->
+                <div class="form-container">
+
+                <form action="send-message.php" method="post"> 
+                    <!--<label for="name"><strong>Name*:</strong></label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email"><strong>Email*:</strong></label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message"><strong>Message*:</strong></label>
+                    <textarea id="message" name="message" rows="4" required></textarea> -->
+
+                    <label for="phone">Call or text</label>
+                    <label for="phone">Phone: 801-891-5114</label>
+
+                    <!-- Honeypot (hidden from humans) -->
+                    <input type="text" name="website" style="display:none">
+
+                   <!-- <button type="submit">Send</button> -->
+                </form>
+            </div>
+                <!--
+                "<form>" tag is used to create an HTML form for user input.The "action" attribute is 
+                    used to specify where to send the form-data when a form is submitted. The "method"
+                    attribute is used to specify the HTTP method to use when sending form-data.
+
+                    "<label>" tag defines a label for several elements. "for" is an attribute that 
+                        specifies the id of the form element the label should be bound to. "form" is an attribute
+                        which specifies the form the label belongs to.
+
+                        "<input>" tag specifies an input field where the user can enter data.
+                        It's the most important form element. It can be displayed in several ways,
+                        depending on the type attribute."type" attribute specifies the type <input> 
+                        element to display. "name" attribute specifies the name of an <input> element.
+                        "required" is an attribute that specifies an input field must be filled out
+                        before submitting the form.
+
+                        "<textarea>" tag defines a multi-line text input control. Used often in
+                            a form, to collect user inputs like comments or reviews. Text area can
+                            hold an unlimited number of characters, and the text renders in a fixed-
+                            width font (usually Courier). "name" attribute is needed to reference the 
+                            form data after the form is submitted (if you omit the "name" attribute,
+                            no data from the text area will be submitted). "id" is used to associate 
+                            the text area with a label. "rows" used to specify the size of the text
+                            area. "required" specifies that the text area must be filled out.
+                
+                            "<button>" tag defines a clickable button. "type" specifies the type of button.
+
+                                "<strong>" tag defines text with strong importance. Usually this is shown as bold.
+                -->
+            </section>
+            </main>
+
+            <footer>
+                <p>© Select Greens</p>
+            </footer>
+        </body>
+</html>
